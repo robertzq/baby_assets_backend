@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: baby
+  datasource:
+    url: jdbc:mysql://localhost:3306/baby_assets?serverTimezone=UTC&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 4flowereatMe
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true

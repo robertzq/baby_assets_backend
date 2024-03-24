@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rbt.baby.dao.AssetsMapper">
+
+<select id="getAllAssets" resultType="com.rbt.baby.pojo.AssetsVo">
+    select id as id,
+           assets_name as assetsName,
+           assets_desc as assetsDesc,
+           assets_usage as assetsUsage
+    from t_assets
+</select>
+
+    <select id="getAssetById" resultType="com.rbt.baby.pojo.AssetsVo">
+        select id as id,
+               assets_name as assetsName,
+               assets_desc as assetsDesc,
+               assets_usage as assetsUsage
+        from t_assets
+        where id = #{id}
+    </select>
+
+</mapper>
