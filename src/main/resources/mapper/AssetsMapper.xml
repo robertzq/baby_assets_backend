@@ -19,4 +19,8 @@
         where id = #{id}
     </select>
 
+    <insert id="addAssets" parameterType="com.rbt.baby.pojo.AssetsVo">
+        insert into t_assets (id,assets_name, assets_desc, assets_usage)
+        values (#{param.id},#{param.assetsName}, #{param.assetsDesc}, #{param.assetsUsage})
+    </insert>
 </mapper>

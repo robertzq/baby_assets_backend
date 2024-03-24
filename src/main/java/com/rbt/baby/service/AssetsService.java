@@ -20,4 +20,8 @@ public class AssetsService {
     public AssetsVo getAssetsById(String id) {
         return assetsMapper.getAssetById(id);
     }
+
+    public void addAssets(AssetsVo assetsVo) {
+        assetsMapper.addAssets(assetsVo);
+    }
 }

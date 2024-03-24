@@ -12,4 +12,6 @@ public interface AssetsMapper {
      List<AssetsVo> getAllAssets();
 
      AssetsVo getAssetById(@Param("id")String id);
+
+    void addAssets(@Param("param") AssetsVo assetsVo);
 }
