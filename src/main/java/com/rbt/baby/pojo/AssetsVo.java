@@ -2,8 +2,10 @@ package com.rbt.baby.pojo;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class AssetsVo {
+public class AssetsVo implements Serializable {
 
     private String id;
 
